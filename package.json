@@ -1,0 +1,34 @@
+{
+  "name": "festival",
+  "version": "1.0.0",
+  "description": "Es un Festival de música de rock y EDM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jhnss25/Festival.git"
+  },
+  "keywords": [
+    "Festival"
+  ],
+  "author": "John Saavedra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jhnss25/Festival/issues"
+  },
+  "homepage": "https://github.com/Jhnss25/Festival#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.15",
+    "cssnano": "^6.0.1",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "postcss": "^8.4.29",
+    "sass": "^1.66.1"
+  }
+}
