@@ -13,3 +13,11 @@ body {
     font-family: v.$fuentePrincipal;
     font-size: 1.6rem;
 }
+[class*="contenedor"] {
+    max-width: 120rem;
+    width: 90%;
+    margin-inline: auto;
+}
+h1 {
+    font-size: 4rem;
+}

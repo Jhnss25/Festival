@@ -8,15 +8,30 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__logo">
+        <div class="header__grid header__contenedor">
             <h1 class="header__titulo">Rock & EDM Festival</h1>
+            
+            <nav class="navegacion">
+                <a href="#" class="navegacion__enlace">Line Up</a>
+                <a href="#" class="navegacion__enlace">Galería</a>
+                <a href="#" class="navegacion__enlace">Boletos</a>
+            </nav>
         </div>
-        <nav class="navegacion">
-            <a href="#" class="navegacion__enlace">Line Up</a>
-            <a href="#" class="navegacion__enlace">Galería</a>
-            <a href="#" class="navegacion__enlace">Boletos</a>
-        </nav>
     </header>
     
+    <div class="video">
+        <div class="video__overlay">
+            <div class="video__contenido">
+                <h1 class="video__titulo">Rock & EDM Festival</h1>
+                <p class="video__meta">Julio 2022, Guayaquil, Ecuador</p>
+            </div>
+
+            <video loop autoplay class="video__video">
+                <source src="video/concierto.mp4" type="video/mp4">
+                <source src="video/concierto.ogg" type="video/ogg">
+                <source src="video/concierto.webm" type="video/webm">
+            </video>
+        </div>
+    </div>
 </body>
 </html>
