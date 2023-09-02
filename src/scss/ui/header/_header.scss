@@ -6,6 +6,10 @@
     padding: 3rem 0;
     text-align: center;
 
+    @include m.tablet { 
+        padding: 1.5rem 0;
+    }
+
     &__grid {
         @include m.tablet { 
             display: flex;
