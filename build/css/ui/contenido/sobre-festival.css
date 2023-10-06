@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap");
+.sobre-festival {
+  padding-block: 5rem;
+}
+@media (min-width: 768px) {
+  .sobre-festival__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
+  }
+}
+.sobre-festival__titulo {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .sobre-festival__titulo {
+    margin: 0 0 4rem 0;
+  }
+}
+.sobre-festival__meta {
+  color: #f53756;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-block: 3rem;
+}
+.sobre-festival__texto {
+  margin-block: 2rem;
+  font-size: 2rem;
+}
+/*# sourceMappingURL=sobre-festival.css.map */

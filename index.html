@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="main-header">
         <div class="header__grid header__contenedor">
             <a href="index.html">
                 <h1 class="header__titulo">Rock & EDM Festival</h1>
             </a>
             
             <nav class="navegacion">
-                <a href="#" class="navegacion__enlace">Line Up</a>
-                <a href="#" class="navegacion__enlace">Galería</a>
-                <a href="#" class="navegacion__enlace">Boletos</a>
+                <a href="#main-line-up" class="navegacion__enlace">Line Up</a>
+                <a href="#main-galeria" class="navegacion__enlace">Galería</a>
+                <a href="#main-boletos" class="navegacion__enlace">Boletos</a>
             </nav>
         </div>
     </header>
@@ -37,6 +37,162 @@
             </video>
         </div>
     </div>
+
+    <section class="sobre-festival sobre-festival__contenedor">
+        <div class="sobre-festival__grid">
+            <picture class="sobre-festival__imagen">
+                <source srcset="build/img/imagen_vocalista.webp" type="image/webp">
+                <img src="build/img/imagen_vocalista.jpg" alt="Imagen Vocalista" class="sobre-festival__img">
+            </picture>
+
+            <div class="sobre-festival__contenido">
+                <h2 class="sobre-festival__titulo">Rock & EDM Festival</h2>
+                <p class="sobre-festival__meta">Julio 2022, Guayaquil, Ecuador</p>
+                <p class="sobre-festival__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor expedita nulla dignissimos repellendus corporis excepturi enim eum? Tenetur rerum excepturi natus dicta ullam sit, fuga asperiores maxime distinctio rem doloremque? </p>
+            </div>
+        </div>
+    </section>
+
+    <main id="main-line-up" class="line-up">
+        <div class="line-up__contenedor">
+            <h2 class="line-up__titulo">Line Up</h2>
+
+            <div class="line-up__escenarios">
+                <p class="line-up__dia">Viernes 21</p>
+
+                <div class="line-up__grid">
+                    <div class="escenario escenario--amarillo">
+                        <h3 class="escenario__titulo">Escenario Rock</h3>
+                        
+                        <picture>
+                            <source srcset="/build/img/icono_rock.webp" type="image/webp">
+                            <img src="/build/img/icono_rock.png" alt="imagen Rock" class="escenario__icono">
+                        </picture>
+
+                        <ul class="escenario__lista">
+                            <li class="escenario__li escenario__li--amarillo"><span class="escenario__li--span">24:00 |</span> Metallica</li>
+                            <li class="escenario__li escenario__li--amarillo"><span class="escenario__li--span">22:00 |</span> Pearl Jam</li>
+                            <li class="escenario__li escenario__li--amarillo"><span class="escenario__li--span">20:00 |</span> KoRn</li>
+                            <li class="escenario__li escenario__li--amarillo"><span class="escenario__li--span">19:00 |</span> Muse</li>
+                            <li class="escenario__li escenario__li--amarillo"><span class="escenario__li--span">18:00 |</span> Breaking Benjamin</li>
+                            <li class="escenario__li escenario__li--amarillo"><span class="escenario__li--span">17:00 |</span> 30 Seconds to Mars</li>
+                        </ul>
+                    </div> <!-- escenario -->
+
+                    <div class="escenario escenario--verde">
+                        <h3 class="escenario__titulo">Escenario EDM</h3>
+
+                        <picture>
+                            <source srcset="/build/img/icono_edm.webp" type="image/webp">
+                            <img src="/build/img/icono_edm.png" alt="imagen Rock" class="escenario__icono">
+                        </picture>
+
+                        <ul class="escenario__lista">
+                            <li class="escenario__li escenario__li--verde"><span class="escenario__li--span">24:00 |</span> Deadmau5</li>
+                            <li class="escenario__li escenario__li--verde"><span class="escenario__li--span">22:00 |</span> Tïesto</li>
+                            <li class="escenario__li escenario__li--verde"><span class="escenario__li--span">20:00 |</span> Hardwell</li>
+                            <li class="escenario__li escenario__li--verde"><span class="escenario__li--span">19:00 |</span> Dash Berlin</li>
+                            <li class="escenario__li escenario__li--verde"><span class="escenario__li--span">18:00 |</span> Fedde Legrand</li>
+                            <li class="escenario__li escenario__li--verde"><span class="escenario__li--span">17:00 |</span> Audien</li>
+                        </ul>
+                    </div> <!-- escenario -->
+                </div>
+            </div> <!-- line-up__escenarios -->
+
+            <div class="line-up__escenarios">
+                <p class="line-up__dia">Sábado 22</p>
+            
+                <div class="line-up__grid">
+                    <div class="escenario escenario--verde">
+                        <h3 class="escenario__titulo">Escenario Rock</h3>
+
+                        <picture>
+                            <source srcset="/build/img/icono_rock.webp" type="image/webp">
+                            <img src="/build/img/icono_rock.png" alt="imagen Rock" class="escenario__icono">
+                        </picture>
+
+                        <ul class="escenario__lista">
+                            <li class="escenario__li escenario__li--verde"><span class="escenario__li--span">24:00 |</span> Reed Hot Chili Peppers</li>
+                            <li class="escenario__li escenario__li--verde"><span class="escenario__li--span">22:00 |</span> The Killers</li>
+                            <li class="escenario__li escenario__li--verde"><span class="escenario__li--span">20:00 |</span> Deftones</li>
+                            <li class="escenario__li escenario__li--verde"><span class="escenario__li--span">19:00 |</span> Limp Bizkit</li>
+                            <li class="escenario__li escenario__li--verde"><span class="escenario__li--span">18:00 |</span> Papa Roach</li>
+                            <li class="escenario__li escenario__li--verde"><span class="escenario__li--span">17:00 |</span> Lamb of God</li>
+                        </ul>
+                    </div> <!-- escenario -->
+
+                    <div class="escenario escenario--amarillo">
+                        <h3 class="escenario__titulo">Escenario EDM</h3>
+
+                        <picture>
+                            <source srcset="/build/img/icono_edm.webp" type="image/webp">
+                            <img src="/build/img/icono_edm.png" alt="imagen Rock" class="escenario__icono">
+                        </picture>
+
+                        <ul class="escenario__lista">
+                            <li class="escenario__li escenario__li--amarillo"><span class="escenario__li--span">24:00 |</span> Paul Van Dyk</li>
+                            <li class="escenario__li escenario__li--amarillo"><span class="escenario__li--span">22:00 |</span> Above & Beyond</li>
+                            <li class="escenario__li escenario__li--amarillo"><span class="escenario__li--span">20:00 |</span> Eric Prdyz</li>
+                            <li class="escenario__li escenario__li--amarillo"><span class="escenario__li--span">19:00 |</span> Armin Van Buuren</li>
+                            <li class="escenario__li escenario__li--amarillo"><span class="escenario__li--span">18:00 |</span> Ferry Corstem</li>
+                            <li class="escenario__li escenario__li--amarillo"><span class="escenario__li--span">17:00 |</span> Vini Vici</li>
+                        </ul>
+                    </div> <!-- escenario -->
+                </div>
+            </div> <!-- line-up__escenarios -->
+        </div> <!-- line-up__contenedor -->
+    </main>
     
+    <section id="main-galeria" class="galeria galeria__contenedor">
+        <h2 class="galeria__titulo">Galería</h2>
+        <ul class="galeria__lista" id="galery"></ul>
+    </section>
+
+    <section id="main-boletos" class="boletos">
+        <h2 class="boletos__titulo">Boletos</h2>
+
+        <div class="boletos__contenedor boletos__grid">
+            <div class="pase">
+                <p class="pase__titulo">Pase 1 Día</p>
+
+                <header>
+                    <p class="pase__heading">Incluye</p>
+                </header>
+                
+                <ul class="pase__listado">
+                    <li class="pase__li">Accesso a ambos escenarios</li>
+                    <li class="pase__li">Comida y Bebida</li>
+                </ul>
+
+                <footer>
+                    <p class="pase__footer">$100</p>
+                </footer>
+            </div> <!-- pase -->
+            
+            <div class="pase">
+                <p class="pase__titulo">Pase 2 Días</p>
+
+                <header>
+                    <p class="pase__heading">Incluye</p>
+                </header>
+                
+                <ul class="pase__listado">
+                    <li class="pase__li">Accesso a ambos escenarios</li>
+                    <li class="pase__li">Comida y Bebida</li>
+                    <li class="pase__li">Camisa del Evento</li>
+                    <li class="pase__li">Acceso VIP</li>
+                </ul>
+
+                <footer>
+                    <p class="pase__footer">$180</p>
+                </footer>
+            </div> <!-- pase -->
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer__copyright">Rock & EDM Festival. Todos los derechos reservados &copy;</p>
+    </footer>
+    <script src="/build/js/app.js"></script>
 </body>
 </html>

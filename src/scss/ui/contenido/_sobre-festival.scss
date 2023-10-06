@@ -1,0 +1,35 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.sobre-festival {
+  padding-block: 5rem;
+  &__grid {
+
+    @include m.tablet { 
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      place-items: center;
+      column-gap: 4rem;
+    }
+  }
+
+  &__titulo {
+    margin-bottom: 0;
+
+    @include m.tablet { 
+      margin: 0 0 4rem 0;
+    }
+  }
+
+  &__meta {
+    color: v.$secondary;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-block: 3rem;
+  }
+
+  &__texto {
+    margin-block: 2rem;
+    font-size: 2rem;
+  }
+}

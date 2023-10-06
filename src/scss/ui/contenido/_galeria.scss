@@ -1,0 +1,29 @@
+@use '../../base/mixins' as m;
+
+.galeria {
+  padding: 4rem 0;
+
+  &__titulo {
+    text-align: center;
+  }
+
+  &__lista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    
+    @include m.telefono { 
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include m.tablet { 
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @include m.desktop { 
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+
+  &__imagen {
+    cursor: pointer;
+  }
+}

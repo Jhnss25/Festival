@@ -2,10 +2,15 @@
 @use 'base/mixins' as m;
 
 .video {
-    min-height: 68rem;
-    max-height: 70rem;
+    min-height: 58rem;
+    max-height: 60rem;
     overflow: hidden;
     position: relative;
+
+    @include m.tablet { 
+        min-height: 68rem;
+        max-height: 70rem;
+    }
 
     &__overlay {
         position: absolute;
@@ -40,13 +45,14 @@
         }
     }
     &__titulo {
-        line-height: 1.2;
+        line-height: 1.5;
         color: v.$white;
         font-size: 5rem;
-        margin: 0 0 3rem 0;
+        margin: 0;
         
         @include m.tablet { 
             font-size: 7rem;
+            margin-bottom: 1rem;
         }
     }
     &__grid {
@@ -58,13 +64,14 @@
     }
     &__meta {
         background-color: v.$secondary;
-        display: inline;
+        display: block;
         color: v.$white;
         padding: 1rem 2rem;
         line-height: 1.5;
         font-weight: 700;
         font-size: 2.4rem;
         margin: 0;
+        display: inline;
     }
 
     &__video {

@@ -11,10 +11,13 @@ const plumber = require('gulp-plumber');
 
 // Imagenes
 const imagemin = require('gulp-imagemin');
+const webp = require('gulp-webp');
 
 const paths = {
     css: "./src/scss/**/*.scss",
-    imagenes: "./src/img/**/*"
+    imagenes: "./src/img/**/*",
+    imagenLigera: "./src/img/**/*.{png,jpg}",
+    js: "./src/js/**/*.js"
 }
 
 function css() {
@@ -23,7 +26,7 @@ function css() {
         .pipe(plumber({
             errorHandler(err) {
                 console.log("Error:", err.message);
-                this.imagemin('end');
+                this.emit('end');
             }
         }))
         .pipe(sass())
@@ -40,12 +43,30 @@ function imagenes() {
         .pipe(dest('build/img'))
 }
 
+function versionWebp() {
+    const option = {
+        quality: 50
+    }
+
+    return src(paths.imagenLigera)
+        .pipe(webp(option))
+        .pipe(dest('build/img'))
+}
+
+function javaScript() {
+    return src(paths.js)
+        .pipe(dest('build/js'))
+}
+
 function dev() {
     watch(paths.css, css);
+    watch(paths.js, javaScript);
     watch(paths.imagenes, imagenes);
 }
 
 exports.css = css;
 exports.imagenes = imagenes;
+exports. javaScript = javaScript;
 exports.dev = dev;
-exports.default = series(css, imagenes, dev);
+exports.versionWebp = versionWebp;
+exports.default = series(css, javaScript, imagenes, versionWebp, dev);
